@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styleApi.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>API | CAC-Series</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <div class="logo">
+                <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
+                <div class="pagName">
+                    <span>CAC-Series</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html#tendencias">Tendencias</a>
+                </li>
+                
+                <li>
+                    <a href="registrarse.html">Registrarse</a>
+                </li>
+
+                <li>
+                    <a class="api" href="api.html">API</a>
+                </li>
+                
+                <li>
+                    <a class="iniciarSesion" href="login.html">Iniciar Sesión</a>
+                </li>
+           </ul>
+
+        </nav>
+    </header>
+
+
+
+    
+
+    <section id="container" class="containerImg" >
+
+        <div class="containerBtnH3" data-aos="zoom-in">
+            <h2 class="subTitulo">Elija categoria y genere su IMAGEN o GIF:</h2>
+            
+            <div class="containerSeletor">
+                <select id="selectorCategoria"></select>
+            </div>
+
+            <input id="generador" class="btn" type="button" value="Generar">
+
+        </div>
+
+        <div class="containerIMGyDowload" data-aos="zoom-in">
+            <div id="img" >
+            </div>
+            <div id="descarga">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <nav class="menuFooter">
+            <ul class="nav-links-footer">
+                <li>
+                    <a href="#">Término y condiciones</a>
+                </li>
+                
+                <li>
+                    <a href="#">Preguntas frecuentes</a>
+                </li>
+                
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+                <li>
+                    <a class="admPeliculas" href="#">Administrador de Peliculas</a>
+                </li>
+           </ul>
+        </nav>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../js/api.js"></script>
+</body>
+</html>

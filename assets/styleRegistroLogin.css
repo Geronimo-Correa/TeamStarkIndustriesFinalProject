@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473,#24242473),url(/assets/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header{
+    display: flex;
+    justify-content: start;    
+    align-items: center;
+    height: 70px;
+    padding: 1px 2%;
+}
+
+.header .logo{
+    cursor: pointer;
+    display: flex;
+    justify-content: start;    
+    align-items: center;
+    transition: all 0.3s;
+    .pagName{
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        color: #ffffff;
+        -webkit-text-stroke: 1px #000000cd;
+        text-shadow: 0px 4px 4px #9f3648cd;
+    }
+}
+
+.header .logo img{
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+
+    width: 30%;
+    margin: auto;
+
+    form{
+        width: 90%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 2rem 2rem 2rem; 
+        background-color: rgb(42, 42, 42);
+        border-radius: 5px;
+        box-shadow: 0px 0px 19px -1px rgba(153,0,255,1);
+    
+        .formRegistrarse{
+            a{
+                text-decoration: none;
+                color:#5b5959;
+            }
+        }
+
+    }
+}
+
+.contenedor-input{
+    width: 100%;
+    /* position: relative; */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+ 
+}
+
+.contenedor-input input,select{
+    width: calc(100% - 16px);
+    padding: 8px 8px 8px 8px;
+    border-radius: 50px;
+    outline: none;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    color: #ffffff;
+    box-sizing: content-box;
+}
+
+.checkbox{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: .6rem;
+    color:#ffffff;
+    outline: none;
+    user-select: none;
+}
+
+.btnForm{
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 3rem;
+    background-color:  #9f3647;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btnForm:hover{
+    transform: scale(.95);
+    transition: 0.3s;
+}
+
+.tituloRegistrar{
+    font-size: 2rem;
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: start;    
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    background-color: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #8a2c3c;
+}
+
+@media screen and (width <= 1200px){
+    .header{
+        justify-content: center;
+    }
+    .contenedor-form{
+        width:90%;
+        height: 80%;
+        
+        form{
+            margin: 1rem;
+        }
+
+    }
+
+
+}

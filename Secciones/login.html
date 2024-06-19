@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | CAC-Series</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/styleRegistroLogin.css">
+    <link rel="icon" href="/assets/carrete-de-pelicula.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/875021797f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a>
+                <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
+                <div class="pagName">
+                    <h2>CAC-Series</h2>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenedor-form" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="800">
+            <form action="../index.html" method="get">
+                <h2 class="tituloRegistrar">Iniciar Sesión</h2>
+
+                <div class="contenedor-input">
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="contenedor-input">
+                    <input id="password" type="password" placeholder="Contraseña">
+                </div>
+                    
+                <input type="submit" class="btnForm" value="Iniciar Sesión">
+
+                <div class="formRegistrarse">
+                    <a href="registrarse.html">Registrarse</a>
+                </div>
+
+            </form>
+        </section>
+    </main>    
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../js/validarLogin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

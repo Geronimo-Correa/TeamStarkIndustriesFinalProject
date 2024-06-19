@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+
+    ::-webkit-scrollbar{
+        background-color: #262327;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color:  #7b3b3b;
+    }
+
+}
+
+body{
+    background-color: #181419;
+}
+
+
+.header{
+    background-color: #7b3b3b;
+    height: 10vh;
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            cursor: pointer;
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            transition: all 0.2s;
+            padding: 0.5rem 1rem;
+            margin-top: 0.5rem;
+            .pagName{
+                font-size: 1.5rem;
+                font-weight: bold;
+                letter-spacing: 0.1rem;
+                color: #ffffff;
+            }
+
+            img{
+                height: 2.6rem;
+                width: auto;
+                transition: all 0.2s;
+                
+            }
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        
+        }
+
+        .nav-links{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                  
+                    margin: 0 1rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    transition: all 0.2s;
+                    
+                    &:hover{
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.2s;
+                        
+                    }
+
+                    
+                }
+                
+                .iniciarSesion,.api{
+                    background-color: #000000;
+                    border-radius: 5px;
+                    transition: transform 0.2s, box-shadow 0.2s;
+                    &:hover{
+                        background-color: #7b3b3b;
+                    }
+                }
+
+            }
+        
+        }
+    }
+
+}
+
+.inicio{
+    background-image:linear-gradient(to right top, #0000008a, #0000008a),  url("/assets/encabezado3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    
+        .h1Inicio{
+            color: #fff;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 1rem;
+            margin-bottom: 1rem;
+            
+        }
+
+        .h2Inicio{
+            color: #fff;
+            font-size: 2rem;
+            margin: 0 1rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .btnReg{
+            text-decoration: none;
+            color: #fff;
+            background-color: #9f3647;
+            border-radius: 4px;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition:all 0.3s ease;
+        }
+        
+        .btnReg:hover{
+            transition:all 0.3s ease;
+            box-shadow: 0 0 33px 1px #9f3648cd;
+            transform: scale(0.96);
+        }
+
+
+}
+
+
+.h3Titulo{
+    color: #fff;
+    font-size: 2.5rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.search,.TendenciasHoy, .MasAclamado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+}
+
+.search{
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.busqueda{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.buscador{
+    border: 3px solid #9f3647;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    height: 3rem;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 50vh;
+    min-width: 10vh;
+}
+
+.buscar{
+    background-color: #9f3647;
+    color: #ffffff;
+    height: 3.2rem;
+    width: 6rem;
+    margin: 20px 10px;
+    /* padding: 0 20px; */
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.buscar:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #9f3648cd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.TendenciasHoy{
+    width: 80%;
+    margin: auto;
+}
+
+.Tendencia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: auto;
+    
+}
+
+.Tendencia  a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.tndItem{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transition:all 0.3s ease;
+}
+
+.peli{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+
+.imgTendencia{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tituloPeli{
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /*centrado de titulo*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    h4 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.1rem;
+        color: #ffffff;
+        -webkit-text-stroke: 1px #000000cd;
+        text-shadow: 0px 4px 4px #9f3648cd;
+    }
+}
+
+.tndItem:hover{
+    box-shadow: 0 0 33px 1px #9f3648cd;
+    transform: scale(0.94);
+    border-radius: 10px;
+
+    transition:all 0.5s ease;
+
+    .tituloPeli{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+    
+}
+
+.TendenciasHoy .btnTnd{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.TendenciasHoy .btnTnd a{
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background: #9f3647;
+    transition: 0.3s;
+}
+
+.btnTnd a:hover{
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #9f3648cd;
+    transition: 0.3s;
+}
+
+.MasAclamado{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+   
+}
+
+.aclamadas{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 0px 0px 40px 0px;
+    
+}
+
+.AclaItem img{
+    background-color: gray;
+    width: 150px;
+    height: 220px;
+    position: relative;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    background-color: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:  #8a2c3c;
+}
+
+hr{
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.footer{
+    background-color: #7b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 1px 2%;
+    .menuFooter{
+        .nav-links-footer{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            li{
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    margin: 0 1rem;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.1rem;
+                    font-weight: 700;                    
+                }
+                
+                .admPeliculas{
+                    background-color: #000000;
+                    border-radius: 5px;
+                }
+
+            }
+        
+        }
+    }
+
+}
+
+
+
+
+
+@media screen and (width <= 1200px) {
+    .inicio{
+
+        .h1Inicio{
+            font-size: 2.5rem;
+        }
+
+        .h2Inicio{
+            font-size: 1rem;
+        }
+
+        .btnReg{
+            text-decoration: none;
+            color: #fff;
+            background-color: #9f3647;
+            border-radius: 4px;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            transition:all 0.3s ease;
+        }
+    }
+
+
+    .search {
+        height: 60vh;
+        width: 80%;
+
+        .h3Titulo{
+            font-size: 1.3rem;
+        }
+        
+        .busqueda {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .buscar{
+                height: 3rem;
+                width: 6rem;
+                max-width: 100%;
+                padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+            }
+
+            .buscador {
+                font-size: 1.2rem;
+                padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+            }
+        }
+    }
+
+    .header{
+        height: initial;
+        padding: 1px 2%;
+        .menu{
+            flex-direction: column;
+            .logo{
+                margin-top: 0.3rem;
+                margin-bottom: 0;
+                .pagName{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    letter-spacing: 0;            
+                }
+        
+                img{
+                    height: 2.5rem;
+                    margin: 0 0.2rem 0 0.2rem;
+                }
+            
+            }
+
+            .nav-links{
+                li{
+                    margin: 0 0 1rem;
+                    a{                      
+                        margin: 0 0.3rem;
+                        padding: 0.35rem 0.35rem;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        
+                        &:hover{
+                            box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.3);
+                            border-radius: 5px;
+                            padding: 0.35rem 0.35rem;
+                            
+                        }
+    
+                        
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .footer{
+        height: 25vh;
+        .menuFooter{
+            .nav-links-footer{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                li{
+                    text-align: center;
+                    margin: 0.1rem;
+                    padding: 0.25rem 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            
+            }
+        }
+    
+    }
+}
+
