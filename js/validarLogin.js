@@ -13,7 +13,7 @@ form.addEventListener('submit',(event) => {
             icon: 'error',
             confirmButtonText: 'Cerrar',
             color:'white',
-          })
+        })
         event.preventDefault();
 
     }else{
