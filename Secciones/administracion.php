@@ -1,3 +1,25 @@
+<?php
+
+    require 'conexion.php';
+
+        if(!empty($_POST['titulo']) && !empty($_POST['clasificacion']) && !empty($_POST['agno']) && !empty($_POST['director']) && !empty($_POST['duracion']) && !empty($_POST['descripcion']) && !empty($_POST['generos']) && !empty($_POST['url'])){    
+            $titulo = $_POST['titulo'];
+            $clasificacion = $_POST['clasificacion'];
+            $agno = $_POST['agno'];
+            $director = $_POST['director'];
+            $duracion = $_POST['duracion'];
+            $descripcion = $_POST['descripcion'];
+            $generos = $_POST['generos'];
+            $url = $_POST['url'];
+
+            $query = "INSERT INTO seriesypeliculas(titulo, clasificacion, año, director, duracion,descripcion, generos, url) VALUES('$titulo','$clasificacion','$agno','$director','$duracion','$descripcion','$generos','$url')";
+
+            $execute = mysqli_query($conn,$query);
+        }
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +45,7 @@
             <a>
                 <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
                 <div class="pagName">
-                    <a href="index.html"><h2>CAC-Series</h2></a>
+                    <h2>CAC-Series</h2>
                 </div>
             </a>
         </div>
@@ -31,35 +53,52 @@
 
     <main>
         <section class="contenedor-form" data-aos="zoom-in-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="800">
-            <form action="../index.html">
+            <form method="POST" action="administracion.php">
                 <h2 class="tituloRegistrar">Nueva Carga 🌐</h2>
                 <div class="contenedor-input">
-                    <input type="text" placeholder="Título" required>
+                    <input type="text" name="titulo" placeholder="Título" required>
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="number" placeholder="Calificación" required>
+                    <select name="clasificacion" required>
+                        <option disabled selected>Clasificaciones</option>
+                        <option value="AA">AA (Comprensible para menores de 7 años)</option>
+                        <option value="A">A (Para todo público)</option>
+                        <option value="B">B (+12 años)</option>
+                        <option value="B15">B15 (No recomendada para menores de 15 años)</option>
+                        <option value="C">C (+18 años)</option>
+                    </select>
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="number" placeholder="Año" required>
+
+                    <?php
+                        $cont = date('Y');
+                    ?>
+                    
+                    <select name="agno" required>
+                        <option disabled selected>Año</option>
+                        <?php while ($cont >= 1950) { ?>
+                            <option value="<?php echo($cont); ?>"> <?php echo($cont); ?></option>
+                        <?php $cont = ($cont-1); }?>
+                    </select>                    
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="text" placeholder="Director o Estudio" required>
+                    <input type="text" name="director" placeholder="Director o Estudio" required>
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="number" placeholder="Duración en minutos" required>
+                    <input type="number" name="duracion" placeholder="Duración en minutos" required>
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="text" placeholder="Descripción" required>
+                    <input type="text" name="descripcion" placeholder="Descripción" required>
                 </div>
 
                 <div class="contenedor-input">
-                    <select name="Generos">
-                        <option>Géneros</option></option>
+                    <select name="generos" required>
+                        <option disabled selected>Géneros</option>
                         <option value="Accion">Accion</option></option>
                         <option value="Aventura">Aventura</option>
                         <option value="Autos">Autos</option>
@@ -90,19 +129,21 @@
                 </div>
 
                 <div class="contenedor-input">
-                    <input type="url" placeholder="URL Trailer" required>
+                    <input type="url" name="url" placeholder="URL Trailer" required>
                 </div>
 
                 <div class="contenedor-input">
-                    <button class="btnForm" valu="Registrarse">Agregar</button>
+                    <button class="btnForm" valu="agregar">Agregar</button>
                 </div>
             </form>
         </section>
     </main>    
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
+
 </body>
 </html>
