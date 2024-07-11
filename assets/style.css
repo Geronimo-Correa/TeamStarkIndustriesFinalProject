@@ -99,7 +99,7 @@ body{
 }
 
 .inicio{
-    background-image:linear-gradient(to right top, #0000008a, #0000008a),  url("/assets/encabezado3.jpg");
+    background-image:linear-gradient(to right top, #0000008a, #0000008a),  url("encabezado3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;

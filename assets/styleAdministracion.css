@@ -8,7 +8,7 @@
 
 body{
     height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url(/assets/fondo.jpg);
+    background:linear-gradient(to right top, #24242473,#24242473),url(../assets/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,6 +21,12 @@ body{
     align-items: center;
     height: 70px;
     padding: 1px 2%;
+
+    margin-bottom: 5rem;
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .header .logo{
@@ -56,12 +62,12 @@ body{
     height: 80vh;
     flex-direction: column;
 
-    width: 30%;
-    margin: auto;
+    width: 20%;
+    margin: 3rem;
 
     form{
         width: 90%;
-        height: 100%;
+        height: 90%;
 
         display: flex;
         flex-direction: column;
@@ -84,7 +90,7 @@ body{
 
 .contenedor-input{
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
 }
 
@@ -104,12 +110,12 @@ body{
     justify-content: center;
     margin: 0 auto;
     width: 100%;
-    height: 3rem;
+    height: 7rem;
     background-color:  #9f3647;
     border-radius: 10px;
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: 0.3s;
 }
 

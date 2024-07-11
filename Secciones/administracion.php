@@ -30,6 +30,9 @@
     <title>ADMINISTRADOR | CAC-Series</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  
+    <link rel="stylesheet" href="../assets/styleAdministracion.css">
+    <link rel="icon" href="../assets/carrete-de-pelicula.ico">
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -41,8 +44,7 @@
     <link href="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
     
-    <link rel="stylesheet" href="/assets/styleAdministracion.css">
-    <link rel="icon" href="/assets/carrete-de-pelicula.ico">
+
     
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,8 +59,8 @@
 
     <header class="header">
         <div class="logo">
-            <a>
-                <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
+            <a href="../index.html">
+                <img src="../assets/carrete-de-pelicula.png" alt="logoPagina">
                 <div class="pagName">
                     <h2>CAC-Series</h2>
                 </div>
