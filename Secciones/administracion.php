@@ -13,7 +13,7 @@
             $generos = $_POST['generos'];
             $url = $_POST['url'];
 
-            $query = "INSERT INTO seriesypeliculas(titulo, clasificacion, año, director, duracion,descripcion, generos, url) VALUES('$titulo','$clasificacion','$agno','$director','$duracion','$descripcion','$generos','$url')";
+            $query = "INSERT INTO seriesYpeliculas(titulo, clasificacion, año, director, duracion,descripcion, generos, url) VALUES('$titulo','$clasificacion','$agno','$director','$duracion','$descripcion','$generos','$url')";
 
             $execute = mysqli_query($conn,$query);
         }
@@ -151,7 +151,7 @@
                             <input type="url" name="url" placeholder="URL Trailer" required>
                         </div>
 
-                        <input class="btnForm" type="submit" name="agregar">
+                        <input class="btnForm" type="submit" name="agregar" value="Cargar">
 
                     </form>
                 </div>
@@ -174,31 +174,40 @@
                                     
                             <tbody table-dark>
                                 <?php
-                                    $consultar = "SELECT titulo, clasificacion, año, director, duracion,descripcion, generos, url FROM seriesypeliculas";
-
-                                    $query = mysqli_query($conn,$consultar);
-
-                                    $array = mysqli_fetch_array($query);
+                                    $query_listaSeries = mysqli_query($conn, "SELECT * FROM seriesYpeliculas");
+                                    $resul_listaSeries = mysqli_num_rows($query_listaSeries);
                                 ?>
 
                                 <?php
-                                    foreach($query as $row){ 
+                                     if($resul_listaSeries > 0){
+                                        while($series = mysqli_fetch_array($query_listaSeries)){
                                 ?>
                                         <tr>
-                                            <td><?php  echo $row['titulo'];?></td>
-                                            <td><?php  echo $row['clasificacion'];?></td>
-                                            <td><?php  echo $row['año'];?></td>
-                                            <td><?php  echo $row['director'];?></td>
-                                            <td><?php  echo $row['duracion'];?></td>
-                                            <td><?php  echo $row['descripcion'];?></td>
-                                            <td><?php  echo $row['generos'];?></td>
+                                            <td><?php  echo $series['titulo'];?></td>
+                                            <td><?php  echo $series['clasificacion'];?></td>
+                                            <td><?php  echo $series['año'];?></td>
+                                            <td><?php  echo $series['director'];?></td>
+                                            <td><?php  echo $series['duracion'];?></td>
+                                            <td><?php  echo $series['descripcion'];?></td>
+                                            <td><?php  echo $series['generos'];?></td>
                                             <td>
-                                                <a href=" <?php  echo $row['url'];?> " target="_blank" rel="noopener noreferrer"> <?php  echo $row['url'];?> </a>
+                                                <a href=" <?php  echo $series['url'];?> " target="_blank" rel="noopener noreferrer"> <?php  echo $series['url'];?> </a>
                                             </td>
+                                            
+                                            <td>
+                                                <div class="text-center iconos">
+                                                    <?php echo "<a class='text-danger' href='../acciones/eliminar.php?codigo=".$series['id']."'> <i class='fa-solid fa-trash'></i> </a>"; ?>
+                                                    <?php echo "<a class='text-success' href='../acciones/modificar.php?codigo=".$series['id']."'> <i class='fa-solid fa-pen'></i> </a>"; ?>
+                                                </div>
+                                            </td>
+                                            
                                         </tr>
                                 <?php
+                                        }
                                     }
                                 ?>
+                                
+                                
                             </tbody>
                         </table>
                     </div>
