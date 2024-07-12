@@ -1,452 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-        
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    
-    
-        <link rel="stylesheet" href="assets/style.css">
-        <link rel="icon" href="assets/carrete-de-pelicula.ico">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
-        <script src="https://kit.fontawesome.com/875021797f.js" crossorigin="anonymous"></script>
-    
-        <title>CAC-Series</title>
-    </head>
-    
-    <body>
-    
-        <header class="header">
-            <nav class="menu">
-                <div class="logo">
-                    <img src="assets/carrete-de-pelicula.png" alt="logoPagina">
-                    <div class="pagName">
-                        <a href="index.html"><span>CAC-Series</span></a>
-                    </div>
-                </div>
-    
-                <ul class="nav-links">
-                    <li>
-                        <a href="#tendencias">Tendencias</a>
-                    </li>
-                    
-                    <li>
-                        <a href="Secciones/registrarse.html">Registrarse</a>
-                    </li>
-    
-                    <li>
-                        <a  href="Secciones/api.html">API</a>
-                    </li>
-                    
-                    <li>
-                        <a class="iniciarSesion" href="Secciones/administracion.php">Administración</a>
-                    </li>
-    
-                    <li>
-                        <a class="iniciarSesion" href="Secciones/login.html">Iniciar Sesión</a>
-                    </li>
-                </ul>
-    
-            </nav>
-        </header>
-    
-    
-        <main class="main">
-            
-            <section class="inicio" data-aos="flip-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
-    
-                <h1 class="h1Inicio">
-                    Peliculas y series ilimitadas 
-                    <br>
-                    en un solo lugar
-                </h1>
-                
-                <h2 class="h2Inicio">
-                    Disfruta donde quieras.
-                    <br>
-                    Cancela en cualquier momento.
-                </h2>
-    
-                <a class="btnReg" href="Secciones/registrarse.html">Registrate</a>
-                
-            </section>
-            
-            
-    
-            <section class="search" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
-                <h3 class="h3Titulo">¿Qué estás buscando para ver?</h3>
-                <form class="busqueda" action="#" >
-                    <input class="buscador" type="text" placeholder="Buscar..."> 
-                    <input class="buscar" type="submit" value="Buscar">
-                </form>
-            </section>
-            
-            <hr>
-    
-            <section id="tendencias" class="TendenciasHoy" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500">
-                <h3 class="h3Titulo">Las tendencias hoy</h3>
-                <div class="Tendencia">
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/ninja-kamui.jpg" alt="" class="imgTendencia">
-    
-                                <div class="tituloPeli">
-                                    <h4>Ninja Kamui</h4>
-                                </div>
-    
-                            </div>
-                        </a>
-                    </div>
-    
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html" class="serie">
-                            <div class="peli">
-                                <img src="assets/Portadas/jaku-chara-tomozaki-kun-2nd-stage.jpg" alt="" class="imgTendencia">
-                                
-                                <div class="tituloPeli">
-                                    <h4>Jaku Chara Tomozaki-kun 2nd Stage</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Boku no Kokoro no Yabai Yatsu Season 2</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/chiyu-mahou-no-machigatta-tsukaikata.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Chiyu Mahou no Machigatta Tsukaikata</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/mashle-2nd-season.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Mashle 2nd Season</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Ore dake Level Up na Ken</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/shangri-la-frontier.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/ragna-crimson.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Ragna Crimson</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/sasaki-to-pii-chan.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Sasaki to Pii-chan</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-3rd-season.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Seasonn</h4>
-                                </div>                            
-    
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/ao-no-exorcist-shimane-illuminati-hen.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Ao no Exorcist: Shimane Illuminati-hen</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Ao no Exorcist: Shimane Illuminati-hen</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/bucchigiri.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Tsuki ga Michibiku Isekai Douchuu 2nd Season</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/pokemon-shinsaku-anime.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Pokemon (Shinsaku Anime)</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/kingdom-5th-season.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Kingdom 5th Season</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/one-piece.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>One Piece</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/dungeon-meshi.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Dungeon Meshi</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/undead-unluck.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Undead Unluck</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/sousou-no-frieren.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Sousou no Frieren</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tndItem">
-                        <a href="Secciones/detalles.html">
-                            <div class="peli">
-                                <img src="assets/Portadas/megumi-no-daigo-kyuukoku-no-orange.jpg" alt="" class="imgTendencia">
-                                <div class="tituloPeli">
-                                    <h4>Megumi no Daigo: Kyuukoku no Orange</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-    
-                    
-                </div>
-                <div class="btnTnd">
-                    <a href="#">Anterior</a> 
-                    <a href="#">Siguiente</a>
-                </div>
-    
-            </section>
-            
-            <hr>
-    
-            <section class="MasAclamado" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500">
-                <h3 class="h3Titulo">Más aclamadas</h3>
-                <div class="aclamadas">
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/ninja-kamui.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/mashle-2nd-season.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/shangri-la-frontier.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/sousou-no-frieren.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/one-piece.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                    <div class="AclaItem">
-                        <a href="#" >
-                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
-                        </a>
-                    </div>
-                </div>
-            </section>
-    
-        </main>
-    
-    
-        <footer class="footer">
-            <nav class="menuFooter">
-                <ul class="nav-links-footer">
-                    <li>
-                        <a href="#">Término y condiciones</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Preguntas frecuentes</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Ayuda</a>
-                    </li>
-                    <li>
-                        <a class="admPeliculas" href="#">Administrador de Peliculas</a>
-                    </li>
-               </ul>
-            </nav>
-        </footer>
-    
-    
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </body>
-    
-    </html>
-    
-    
-    
-    
-
-
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="icon" href="/assets/carrete-de-pelicula.ico">
-
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/carrete-de-pelicula.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <undefined>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet">
+    </undefined>
 
     <script src="https://kit.fontawesome.com/875021797f.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CAC-Series</title>
 </head>
 
@@ -455,7 +28,7 @@
     <header class="header">
         <nav class="menu">
             <div class="logo">
-                <img src="/assets/carrete-de-pelicula.png" alt="logoPagina">
+                <img src="assets/carrete-de-pelicula.png" alt="logoPagina">
                 <div class="pagName">
                     <a href="index.html"><span>CAC-Series</span></a>
                 </div>
@@ -465,21 +38,21 @@
                 <li>
                     <a href="#tendencias">Tendencias</a>
                 </li>
-                
+
                 <li>
                     <a href="Secciones/registrarse.html">Registrarse</a>
                 </li>
 
                 <li>
-                    <a  href="/Secciones/api.html">API</a>
-                </li>
-                
-                <li>
-                    <a class="iniciarSesion" href="/Secciones/administracion.html">Administración</a>
+                    <a href="Secciones/api.html">API</a>
                 </li>
 
                 <li>
-                    <a class="iniciarSesion" href="/Secciones/login.html">Iniciar Sesión</a>
+                    <a class="iniciarSesion" href="Secciones/administracion.php">Administración</a>
+                </li>
+
+                <li>
+                    <a class="iniciarSesion" href="Secciones/login.html">Iniciar Sesión</a>
                 </li>
             </ul>
 
@@ -488,15 +61,15 @@
 
 
     <main class="main">
-        
+
         <section class="inicio" data-aos="flip-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
 
             <h1 class="h1Inicio">
-                Peliculas y series ilimitadas 
+                Peliculas y series ilimitadas
                 <br>
                 en un solo lugar
             </h1>
-            
+
             <h2 class="h2Inicio">
                 Disfruta donde quieras.
                 <br>
@@ -504,28 +77,29 @@
             </h2>
 
             <a class="btnReg" href="Secciones/registrarse.html">Registrate</a>
-            
+
         </section>
-        
-        
+
+
 
         <section class="search" data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000">
             <h3 class="h3Titulo">¿Qué estás buscando para ver?</h3>
-            <form class="busqueda" action="#" >
-                <input class="buscador" type="text" placeholder="Buscar..."> 
+            <form class="busqueda" action="#">
+                <input class="buscador" type="text" placeholder="Buscar...">
                 <input class="buscar" type="submit" value="Buscar">
             </form>
         </section>
-        
+
         <hr>
 
-        <section id="tendencias" class="TendenciasHoy" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500">
+        <section id="tendencias" class="TendenciasHoy" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1500">
             <h3 class="h3Titulo">Las tendencias hoy</h3>
             <div class="Tendencia">
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/ninja-kamui.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/ninja-kamui.jpg" alt="" class="imgTendencia">
 
                             <div class="tituloPeli">
                                 <h4>Ninja Kamui</h4>
@@ -536,10 +110,11 @@
                 </div>
 
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html" class="serie">
+                    <a href="Secciones/detalles.html" class="serie">
                         <div class="peli">
-                            <img src="/assets/Portadas/jaku-chara-tomozaki-kun-2nd-stage.jpg" alt="" class="imgTendencia">
-                            
+                            <img src="assets/Portadas/jaku-chara-tomozaki-kun-2nd-stage.jpg" alt=""
+                                class="imgTendencia">
+
                             <div class="tituloPeli">
                                 <h4>Jaku Chara Tomozaki-kun 2nd Stage</h4>
                             </div>
@@ -547,9 +122,10 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt=""
+                                class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Boku no Kokoro no Yabai Yatsu Season 2</h4>
                             </div>
@@ -557,9 +133,10 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/chiyu-mahou-no-machigatta-tsukaikata.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/chiyu-mahou-no-machigatta-tsukaikata.jpg" alt=""
+                                class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Chiyu Mahou no Machigatta Tsukaikata</h4>
                             </div>
@@ -567,9 +144,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/mashle-2nd-season.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/mashle-2nd-season.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Mashle 2nd Season</h4>
                             </div>
@@ -577,9 +154,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Ore dake Level Up na Ken</h4>
                             </div>
@@ -587,9 +164,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/shangri-la-frontier.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/shangri-la-frontier.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su</h4>
                             </div>
@@ -597,9 +174,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/ragna-crimson.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/ragna-crimson.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Ragna Crimson</h4>
                             </div>
@@ -607,9 +184,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/sasaki-to-pii-chan.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/sasaki-to-pii-chan.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Sasaki to Pii-chan</h4>
                             </div>
@@ -617,20 +194,22 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-3rd-season.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-3rd-season.jpg"
+                                alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Seasonn</h4>
-                            </div>                            
+                            </div>
 
                         </div>
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/ao-no-exorcist-shimane-illuminati-hen.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/ao-no-exorcist-shimane-illuminati-hen.jpg" alt=""
+                                class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Ao no Exorcist: Shimane Illuminati-hen</h4>
                             </div>
@@ -638,9 +217,10 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt=""
+                                class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Ao no Exorcist: Shimane Illuminati-hen</h4>
                             </div>
@@ -648,9 +228,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/bucchigiri.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/bucchigiri.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Tsuki ga Michibiku Isekai Douchuu 2nd Season</h4>
                             </div>
@@ -658,9 +238,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/pokemon-shinsaku-anime.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/pokemon-shinsaku-anime.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Pokemon (Shinsaku Anime)</h4>
                             </div>
@@ -668,9 +248,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/kingdom-5th-season.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/kingdom-5th-season.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Kingdom 5th Season</h4>
                             </div>
@@ -678,9 +258,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/one-piece.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/one-piece.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>One Piece</h4>
                             </div>
@@ -688,9 +268,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/dungeon-meshi.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/dungeon-meshi.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Dungeon Meshi</h4>
                             </div>
@@ -698,9 +278,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/undead-unluck.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/undead-unluck.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Undead Unluck</h4>
                             </div>
@@ -708,9 +288,9 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/sousou-no-frieren.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/sousou-no-frieren.jpg" alt="" class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Sousou no Frieren</h4>
                             </div>
@@ -718,9 +298,10 @@
                     </a>
                 </div>
                 <div class="tndItem">
-                    <a href="./Secciones/detalles.html">
+                    <a href="Secciones/detalles.html">
                         <div class="peli">
-                            <img src="/assets/Portadas/megumi-no-daigo-kyuukoku-no-orange.jpg" alt="" class="imgTendencia">
+                            <img src="assets/Portadas/megumi-no-daigo-kyuukoku-no-orange.jpg" alt=""
+                                class="imgTendencia">
                             <div class="tituloPeli">
                                 <h4>Megumi no Daigo: Kyuukoku no Orange</h4>
                             </div>
@@ -728,94 +309,124 @@
                     </a>
                 </div>
 
-                
+
             </div>
             <div class="btnTnd">
-                <a href="#">Anterior</a> 
+                <a href="#">Anterior</a>
                 <a href="#">Siguiente</a>
             </div>
 
         </section>
-        
+
         <hr>
 
-        <section class="MasAclamado" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1500">
+        <section class="MasAclamado" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1500">
             <h3 class="h3Titulo">Más aclamadas</h3>
             <div class="aclamadas">
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/ninja-kamui.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/ninja-kamui.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/mashle-2nd-season.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/mashle-2nd-season.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/shangri-la-frontier.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/shangri-la-frontier.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/sousou-no-frieren.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/sousou-no-frieren.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/tsuki-ga-michibiku-isekai-douchuu-2nd-season.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/ore-dake-level-up-na-ken.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/one-piece.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/one-piece.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
                 </div>
                 <div class="AclaItem">
-                    <a href="#" >
-                        <img src="/assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="" >
+                    <a href="#">
+                        <img src="assets/Portadas/boku-no-kokoro-no-yabai-yatsu-season-2.jpg" alt="">
                     </a>
+                </div>
+            </div>
+        </section>
+        <section class="MasAclamado" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1500">
+            <h3 class="h3Titulo">Desarrolladores</h3>
+            <div class="containerDev">
+                <div class="devItem">
+                    <div class="perfil"><img src="/assets/Portadas/dev1 (1).jpg" alt="Geronimo correa">
+                        <h3>Geronimo Correa</h1><a href="http://www.linkedin.com/in/geronimocorrea"><i
+                                    class="fa-brands fa-linkedin-in"></i></i></a>
+                    </div>
+                    <div class="perfil"><img src="/assets/Portadas/dev6.jpg" alt="Nancy gutierrez">
+                        <h3>Nancy Gutierrez</h1><a
+                                href="https://www.linkedin.com/in/abogadadevnancy-gutierrez-9288b92a4/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="perfil"><img src="/assets/Portadas/dev2.jpg" alt="Santiago Loto">
+                        <h3>Santiago Loto</h3><a href="https://www.linkedin.com/in/santiago-loto"><i
+                                class="fa-brands fa-linkedin-in"></i></i></a>
+                    </div>
+                    <div class="perfil"><img src="/assets/Portadas/dev3.jpg" alt="Eduardo Pintabona">
+                        <h3>Eduardo Pintabona</h3><a href="https://www.linkedin.com/feed/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="perfil"><img src="/assets/Portadas/dev5.jpg" alt="Micaela">
+                        <h3>Micaela Lopez</h3><a href="https://www.linkedin.com/in/micaela-roc%C3%ADo-lopez-84359127b"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -824,23 +435,24 @@
 
 
     <footer class="footer">
+
         <nav class="menuFooter">
             <ul class="nav-links-footer">
                 <li>
                     <a href="#">Término y condiciones</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Preguntas frecuentes</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Ayuda</a>
                 </li>
                 <li>
                     <a class="admPeliculas" href="#">Administrador de Peliculas</a>
                 </li>
-           </ul>
+            </ul>
         </nav>
     </footer>
 
@@ -853,6 +465,3 @@
 </body>
 
 </html>
-
-
-
