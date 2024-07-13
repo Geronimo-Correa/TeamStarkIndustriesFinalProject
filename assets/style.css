@@ -354,47 +354,41 @@ hr {
   align-items: center;
   padding: 0px;
   margin: 0px;
-  height: 80%;
+  height: 70%;
   font-size: 1.2rem;
   font-weight: bold;
-
-
-.devItem {
-display: flex;
-padding: 0%;
-margin: 10px;
-
-    }
-.perfil img {
-  display:flexbox;
-  align-content: space-around;
-  align-items:center;
-  margin: 20px;
-  padding: 15px;
-  height: 50%;
-  border-radius: 50%;
+  .devItem {
+    display: flex;
+    padding: 0%;
+    margin: 5%;
   }
-
-   
-      
+  .perfil img {
+    display: flexbox;
+    align-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    height: 50%;
+    border-radius: 50%;
   }
+}
 
 .fa-brands {
-background-color: #ffffff;opacity: 50%;
-border-radius: 100%;
-padding: 20px;
-color: #8a2c3c;
-font-weight: bold;
-font-size: 1.2rem;
-transition: all 0.3s ease;
-  }
+  background-color: #ffffff;
+  opacity: 50%;
+  border-radius: 100%;
+  padding: 20px;
+  color: #8a2c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
 
-  .fa-brands:hover {
-    transition: all 0.3s ease;
-    box-shadow: 0 0 33px 1px #9f3648cd;
-    transform: scale(0.96);
-  }
-
+.fa-brands:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 33px 1px #9f3648cd;
+  transform: scale(0.96);
+}
 
 .footer {
   background-color: #7b3b3b;
